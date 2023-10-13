@@ -3,5 +3,9 @@ description: lorum ipsum
 runs:
   using: composite
   steps:
-    - run: env
+    - run: |
+        set -exuo pipefail
+        env
+        version="$(basename "${GITHUB_ACTION_PATH}")"
+        echo "Running action from version **${version}**" >> $GITHUB_OUTPUT
       shell: bash
