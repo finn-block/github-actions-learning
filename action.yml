@@ -1,0 +1,7 @@
+name: GitHub Actions Learning/Experiments
+description: lorum ipsum
+runs:
+  using: composite
+  steps:
+    - run: env
+      shell: bash

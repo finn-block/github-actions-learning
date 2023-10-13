@@ -1,0 +1,9 @@
+name: build
+
+on: [push]
+
+jobs:
+  self:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: finn-tbd/github-actions-learning@main
