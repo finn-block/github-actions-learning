@@ -7,5 +7,5 @@ runs:
         set -exuo pipefail
         env
         version="$(basename "${GITHUB_ACTION_PATH}")"
-        echo "Running action from version **${version}**" >> $GITHUB_OUTPUT
+        echo "Running action from version **${version}**" >> $GITHUB_STEP_SUMMARY
       shell: bash
