@@ -6,6 +6,7 @@ runs:
     - run: |
         set -exuo pipefail
         env
+        echo "github.head_ref: ${{ github.head_ref }}"
         version="$(basename "${GITHUB_ACTION_PATH}")"
         echo "Running action from version **${version}**" >> $GITHUB_STEP_SUMMARY
         echo "git describe: `$(git -C ${GITHUB_ACTION_PATH} describe --always --tags)`" >> $GITHUB_STEP_SUMMARY
