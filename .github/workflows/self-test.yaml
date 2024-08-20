@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: finn-tbd/github-actions-learning@main
-      - run: echo '${{ toJSON(githb.event) }}'
+      - run: echo '${{ toJSON(github.event) }}'
